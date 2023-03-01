@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Evheniia"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 08:48:03 "/>
+        <attribute name="created" value="RXZoZW5paWE7TEFQVE9QLUtCRU9BRUpROzIwMjMtMDMtMDE7IjA4OjI0OjE2ICI7MzA4Mw=="/>
+        <attribute name="edited" value="RXZoZW5paWE7TEFQVE9QLUtCRU9BRUpROzIwMjMtMDMtMDE7IjA4OjQ4OjAzICI7MTszMTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;N= &quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <assign variable="index" expression="1"/>
+            <declare name="sguare" type="Integer" array="False" size=""/>
+            <while expression="index&lt;=N">
+                <assign variable="sguare" expression="index*index"/>
+                <if expression="sguare mod 3 == 0">
+                    <then>
+                        <output expression="sguare" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="index" expression="index + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
